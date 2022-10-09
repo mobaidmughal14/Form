@@ -1,0 +1,64 @@
+
+<!-- Creating a form using html -->
+
+<!DOCTYPE html>
+<html >
+<html class="testing">
+
+<head>
+    <Title>visting form</Title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <header class="main_heading">
+        <h1>Visiting Form & Payment</h1>
+    </header>
+    <form action="">
+        <div>
+
+            <fieldset>
+                <legend><h2>Personal Info</h2></legend>
+                <p><b>First Name: </b> <input type="text" class="fname" id="fname" placeholder="Enter Name" required></p>
+                <p><b>Last Name: </b><input type="text" class="lname" id="lname" placeholder="Enter Name" required></p>
+                <br>
+
+
+                <p>
+                    <fieldset class="gender">
+                    <legend><b>Gender</b></legend>
+                    <input type="radio" name="gender" id="male" required>Male
+                    <input type="radio" name="gender" id="female" required>Female
+                </fieldset>
+                </p>
+                <p><b>Address: </b><textarea  required class="address" placeholder="Full address" id="address">Your address here</textarea></p>
+                <p><b>Email: </b><input type="email" required placeholder="xyz@mail.com" class="email" id="email"></p>
+                <p><b>Pincode: </b><input type="password" placeholder="0000" required class="pincode" id="pincode"></p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><h2>Payment Info</h2></legend>
+                <p><b>Card Type: </b>
+                <select required class="card" id="card">
+                    <option value="">--- Select ---</option>
+                    <option value="visa">Visa</option>
+                    <option value="master">Master</option>
+                    <option value="paypal">Pay Pal</option>
+                </select></p>
+                <p><b>Card Number: </b><input type="number" placeholder="1234567809"required class="cardno" id="cardno"></p>
+                <p><b>Expiry: </b><input type="date" placeholder="11 12 22" required class="expiry" id="expiry"></p>
+                <p><b>CVV: </b><input type="password" placeholder="******" required class="cvv" id="cvv"></p>
+                <!-- <p><b>CNIC Picture: </upload></b><input type="image" required class="cnic" id="cnic"></p> -->
+                <button class="button" id="button" required value="paynow">PAY NOW</button>
+
+            </fieldset>
+
+        </div>
+
+    </form>
+</body>
+<script src="new.js"></script>
+
+</html>
